@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AparcaBéSiusplau</title>
+<link rel="stylesheet" href="aparcabesiusplaustyle.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<img src="ParkCheck-4.png" alt="Logo AparcaBéSiusplau">
+</div>
+
+<nav>
+<ul>
+<li><a href="#inici">Inici</a></li>
+<li><a href="#projecte">El Projecte</a></li>
+<li><a href="#funcionament">Com Funciona</a></li>
+<li><a href="#beneficis">Beneficis</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="#contacte">Contacte</a></li>
+</ul>
+</nav>
+
+</header>
+
+
+<section id="inici" class="hero">
+
+<h1>AparcaBéSiusplau</h1>
+<p>Millorem la convivència als carrers denunciant cotxes mal aparcats.</p>
+
+<button class="download-btn" onclick="openPopup()">
+Descarregar l'aplicació
+</button>
+
+<div id="popup" class="popup">
+<div class="popup-content">
+<img src="apknodisponibleaviat.png" alt="App AparcaBéSiusplau">
+</div>
+</div>
+
+</section>
+
+
+<section id="projecte" class="seccio">
+
+<h2>Què és AparcaBéSiusplau?</h2>
+
+<p>
+AparcaBéSiusplau és una plataforma d'ús lliure que permet als ciutadans
+col·laborar per millorar l'aparcament als carrers.
+</p>
+
+<p>
+L'aplicació permet fer una foto d'un vehicle mal aparcat, introduir la seva
+matrícula manualment i enviar la incidència.
+</p>
+
+<p>
+Un cop enviada, la plataforma genera automàticament una denúncia que s'envia
+mitjançant Telegram a les autoritats corresponents.
+</p>
+
+</section>
+
+
+<section id="funcionament" class="seccio">
+
+<h2>Com funciona?</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>1. Fes una foto</h3>
+<p>Fotografia el vehicle mal aparcat des de l'aplicació.</p>
+</div>
+
+<div class="card">
+<h3>2. Introdueix la matrícula</h3>
+<p>Escriu manualment la matrícula del vehicle.</p>
+</div>
+
+<div class="card">
+<h3>3. Envia la denúncia</h3>
+<p>La informació s'envia automàticament a través de Telegram.</p>
+</div>
+
+<div class="card">
+<h3>4. Millorem els carrers</h3>
+<p>La participació ciutadana ajuda a reduir infraccions.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="beneficis" class="seccio">
+
+<h2>Beneficis de la plataforma</h2>
+
+<ul class="beneficis">
+
+<li>✔ Reduir cotxes mal aparcats</li>
+<li>✔ Millorar la mobilitat urbana</li>
+<li>✔ Facilitar la participació ciutadana</li>
+<li>✔ Sistema simple i ràpid</li>
+<li>✔ Totalment gratuït</li>
+
+</ul>
+
+</section>
+
+
+<section id="faq" class="seccio">
+
+<h2>Preguntes freqüents</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>És legal utilitzar l'aplicació?</h3>
+<p>L'aplicació només facilita l'enviament d'informació. Les autoritats decideixen
+si la denúncia és vàlida.</p>
+</div>
+
+<div class="card">
+<h3>Cal registrar-se?</h3>
+<p>No, la plataforma és d'ús lliure.</p>
+</div>
+
+<div class="card">
+<h3>Funciona a tota Catalunya?</h3>
+<p>El sistema està pensat per poder funcionar a qualsevol municipi.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="contacte" class="seccio">
+
+<h2>Contacte</h2>
+
+<form action="https://formspree.io/f/xwvrlpoa" method="POST" class="contact-form">
+
+<label>Email</label>
+<input type="email" name="email" placeholder="Escriu el teu correu">
+
+<label>Missatge</label>
+<textarea name="message" placeholder="Escriu el teu comentari"></textarea>
+
+<button type="submit">Enviar</button>
+
+</form>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 AparcaBéSiusplau</p>
+<p>Domini oficial: aparcabesiusplau.cat</p>
+<p>Iniciativa d'Arnau Ribas i Jan Preixens</p>
+
+</footer>
+
+
+<script>
+
+function openPopup(){
+document.getElementById("popup").classList.add("show");
+}
+
+document.getElementById("popup").addEventListener("click",function(){
+this.classList.remove("show");
+});
+
+</script>
+
+</body>
+</html>
